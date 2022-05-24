@@ -1,29 +1,31 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Castle here.
+ * Food for my fish
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Molly Wu
+ * @version May 2022
  */
-public class Castle extends Actor
+public class Pearl extends Actor
 {
     public static int speed = 1;
-    public Castle()
+    
+    public Pearl()
     {
     }
     /**
-     * Act - do whatever the castle wants to do. This method is called whenever
+     * Act - do whatever the Fish wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
+        // Chip falls downwards
         setLocation(getX(), getY() + speed);
         
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            world.createCastle();
+            world.createBomb();
             world.removeObject(this);
         }
     }

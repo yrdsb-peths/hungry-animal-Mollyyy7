@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Chip extends Actor
 {
+    public static int speed = 1;
+    
     public Chip()
     {
     }
@@ -18,7 +20,7 @@ public class Chip extends Actor
     public void act()
     {
         // Chip falls downwards
-        setLocation(getX(), getY() + 1);
+        setLocation(getX(), getY() + speed);
         
         // Remove chip and draw game over when chip gets to the bottom
         MyWorld world = (MyWorld) getWorld();
@@ -27,5 +29,10 @@ public class Chip extends Actor
             world.gameOver();
             world.removeObject(this);
         }
+    }
+    
+    public static void setSpeed(int spd)
+    {
+        speed = spd;
     }
 }

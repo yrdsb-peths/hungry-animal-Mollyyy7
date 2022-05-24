@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Castle here.
+ * Write a description of class Bomb here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Castle extends Actor
+public class Bomb extends Actor
 {
-    public static int speed = 1;
-    public Castle()
+    static public int speed = 1;
+    public Bomb()
     {
     }
     /**
@@ -23,9 +23,10 @@ public class Castle extends Actor
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            world.createCastle();
+            world.createBomb();
             world.removeObject(this);
         }
+        
     }
     
     public static void setSpeed(int spd)

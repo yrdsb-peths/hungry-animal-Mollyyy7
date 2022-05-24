@@ -10,6 +10,7 @@ public class MyWorld extends World
 {
     public int score = 0;
     Label scoreLabel;
+    int level = 1;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -18,7 +19,11 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        Fish fish = new Fish("hi");
+        GreenfootImage bg = new GreenfootImage("underwater.jpg"); // adjust filename as needed
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
+        
+        Fish fish = new Fish();
         addObject(fish, 100, 300);
         
         // Create a label
@@ -27,6 +32,8 @@ public class MyWorld extends World
         
         createChip();
         createCastle();
+        createBomb();
+        createPearl();
     }
     
     /**
@@ -36,6 +43,7 @@ public class MyWorld extends World
     {
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
+        Greenfoot.stop();
     }
     
     /**
@@ -45,6 +53,11 @@ public class MyWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        
+        if(score % 5 == 0)
+        {
+            level ++;
+        }
     }
     
     /**
@@ -52,6 +65,11 @@ public class MyWorld extends World
      */
     public void decreaseScore()
     {
+        if(score % 5 == 0)
+        {
+            level --;
+        }
+        
         score--;
         scoreLabel.setValue(score);
     }
@@ -62,6 +80,7 @@ public class MyWorld extends World
     public void createChip()
     {
         Chip chip = new Chip();
+        chip.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(chip, x, y);
@@ -76,5 +95,25 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(castle, x, y);
+    }
+    
+    /**
+     * Create a new bomb at random location at top of screen
+     */
+    public void createBomb()
+    {
+        Bomb bomb = new Bomb();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(bomb, x, y);
+    }
+    
+    public void createPearl()
+    {
+        Pearl pearl = new Pearl();
+        pearl.setSpeed(level);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(pearl, x, y);
     }
 }

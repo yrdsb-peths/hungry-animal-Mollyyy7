@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Modifier
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Modifier\ here.\ For\ the\ player\ to\ modify\ speed\r\n\ \r\n\ @author\ Molly\r\n\ @version\ May\ 2022\r\n
+comment1.params=
+comment1.target=Modifier()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Modifier.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+numComments=3
