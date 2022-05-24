@@ -47,7 +47,12 @@ public class Modifier extends World
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }
-        
+        /**
+         * add difficulty of game
+         * level 1: fish speed:1 castle/bomb initial speed:1
+         * level 2: fish speed:2 castle/bomb speed:2
+         * level 3: fish speed:3 castle/bomb speed:3
+         */
         if(Greenfoot.mouseClicked(buttonOne))
         {
             Bomb.setSpeed(1);
@@ -75,11 +80,4 @@ public class Modifier extends World
             Fish.setSpeed(3);
         }
     }
-    
-    /**
-     * level 1: fish speed:1 food initial speed:1
-     * level 2: fish speed:2 food initial speed:2
-     * level 3: fish speed:3 food initial speed:3
-     */
-    
 }
