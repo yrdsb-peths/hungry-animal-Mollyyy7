@@ -24,4 +24,5 @@ comment7.target=void\ createBomb()
 comment7.text=\r\n\ Create\ a\ new\ bomb\ at\ random\ location\ at\ top\ of\ screen\r\n
 comment8.params=
 comment8.target=void\ createPearl()
+comment8.text=\r\n\ Create\ a\ new\ pearl\ at\ random\ location\ at\ top\ of\ screen\r\n
 numComments=9

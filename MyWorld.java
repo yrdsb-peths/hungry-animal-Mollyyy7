@@ -110,6 +110,9 @@ public class MyWorld extends World
         addObject(bomb, x, y);
     }
     
+    /**
+     * Create a new pearl at random location at top of screen
+     */
     public void createPearl()
     {
         Pearl pearl = new Pearl();

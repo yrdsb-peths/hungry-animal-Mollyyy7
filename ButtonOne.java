@@ -10,7 +10,6 @@ public class ButtonOne extends Actor
 {
     public ButtonOne()
     {
-        
     }
     
     /**
