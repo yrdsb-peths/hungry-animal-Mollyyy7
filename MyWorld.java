@@ -92,6 +92,7 @@ public class MyWorld extends World
     public void createCastle()
     {
         Castle castle = new Castle();
+        castle.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(castle, x, y);
@@ -103,6 +104,7 @@ public class MyWorld extends World
     public void createBomb()
     {
         Bomb bomb = new Bomb();
+        bomb.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(bomb, x, y);

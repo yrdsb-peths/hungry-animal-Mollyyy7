@@ -25,7 +25,7 @@ public class Pearl extends Actor
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            world.createBomb();
+            world.createPearl();
             world.removeObject(this);
         }
     }
