@@ -11,7 +11,6 @@ public class TitleScreen extends World
     Label titleLabel = new Label("Hungry Fish", 60);
     /**
      * Constructor for objects of class TitleScreen.
-     * 
      */
     public TitleScreen()
     {    
@@ -37,7 +36,7 @@ public class TitleScreen extends World
     
     /**
      * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * That is: create the initial objects and labels and add them to the world.
      */
     private void prepare()
     {

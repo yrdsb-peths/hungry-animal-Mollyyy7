@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Modifier here. For the player to modify speed
+ * Write a description of class Modifier here. For the player to modify game level
  * 
- * @author Molly
+ * @author Molly Wu
  * @version May 2022
  */
 public class Modifier extends World
@@ -20,6 +20,7 @@ public class Modifier extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        
         Label instruction = new Label("Press \u2192 to Start Game", 30);
         addObject(instruction, 400, 350);
         Label title = new Label("Modifier", 60);
@@ -43,17 +44,17 @@ public class Modifier extends World
     
     public void act()
     {
-        //Start the game if the user presses the space bar
+        //Start the game if the user presses right key
         if(Greenfoot.isKeyDown("right"))
         {
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }
         /**
-         * add difficulty of game
-         * level 1: fish speed:1 castle/bomb initial speed:1
-         * level 2: fish speed:2 castle/bomb speed:2
-         * level 3: fish speed:3 castle/bomb speed:3
+         * add difficulty of my game
+         * level 1: fish speed:1 chip/pearl/castle/bomb initial speed:1
+         * level 2: fish speed:2 chip/pearl/castle/bomb initial speed:2
+         * level 3: fish speed:3 chip/pearl/castle/bomb initial speed:3
          */
         if(Greenfoot.mouseClicked(buttonOne))
         {

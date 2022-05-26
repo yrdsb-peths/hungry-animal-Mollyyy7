@@ -2,22 +2,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class ButtonOne here.
+ * when the player click on this button, the difficulty level of this game will be level one
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Molly Wu 
+ * @version May 2022
  */
 public class ButtonOne extends Actor
 {
     public ButtonOne()
     {
-    }
-    
-    /**
-     * Act - do whatever the ButtonOne wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        
     }
 }

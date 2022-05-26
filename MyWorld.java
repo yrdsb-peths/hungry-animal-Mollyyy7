@@ -61,7 +61,7 @@ public class MyWorld extends World
     }
     
     /**
-     * Increase score
+     * Decrease score
      */
     public void decreaseScore()
     {

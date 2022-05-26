@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Chip
-comment0.text=\r\n\ Food\ for\ my\ fish\r\n\ \r\n\ @author\ Molly\ Wu\r\n\ @version\ May\ 2022\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Chip\ here.\r\n\ a\ type\ of\ food\ for\ the\ fish\r\n\ when\ the\ fish\ eats\ a\ chip,\ the\ player\ will\ gain\ one\ point\r\n\ if\ the\ fish\ did\ not\ eat\ the\ chip\ and\ it\ falls\ to\ the\ bottom,\ the\ game\ will\ end\r\n\ \r\n\ @author\ Molly\ Wu\r\n\ @version\ May\ 2022\r\n
 comment1.params=
 comment1.target=Chip()
 comment2.params=

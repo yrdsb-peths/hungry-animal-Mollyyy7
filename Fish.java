@@ -2,6 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Fish here.
+ * the player is able to control the fish and gain points by eating falling objects such as chip, pearl, castle, and bomb
+ * throughout the game, the player will gain or lose points by eating different objects
+ * when the fish did not eat the chip and it falls to the bottom, the game will end
+ * when the player has 0 or less points, the game will end
  * 
  * @author Molly Wu 
  * @version May 2022

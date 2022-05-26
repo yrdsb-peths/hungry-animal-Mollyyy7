@@ -1,7 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Food for my fish
+ * Write a description of class Chip here.
+ * a type of food for the fish
+ * when the fish eats a pearl, the player will gain one point
  * 
  * @author Molly Wu
  * @version May 2022

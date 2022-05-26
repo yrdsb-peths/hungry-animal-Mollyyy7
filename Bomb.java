@@ -2,9 +2,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Bomb here.
+ * a type of falling object that the fish should not eat
+ * when the fish eats a bomb, the player will lose one point
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Molly Wu 
+ * @version May 2022
  */
 public class Bomb extends Actor
 {
@@ -13,7 +15,7 @@ public class Bomb extends Actor
     {
     }
     /**
-     * Act - do whatever the castle wants to do. This method is called whenever
+     * Act - do whatever the bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()

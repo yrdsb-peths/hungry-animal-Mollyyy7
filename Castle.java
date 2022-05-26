@@ -2,6 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Castle here.
+ * a type of falling object that the fish should not eat
+ * when the fish eats a castle, the player will lose one point
  * 
  * @author Molly Wu 
  * @version May 2022
