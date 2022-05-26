@@ -30,6 +30,8 @@ public class Modifier extends World
         addObject(levelTwo, 300, 150);
         Label levelThr = new Label("Level 3", 50);
         addObject(levelThr, 500, 150);
+        Label gameInstruction = new Label("Eat Chip or Pearl to Gain 1 Point, Eat Castle or Bomb to Lose 1 Point.", 22);
+        addObject(gameInstruction, 300, 270);
         
         buttonOne = new ButtonOne();
         addObject(buttonOne, 100, 210);
