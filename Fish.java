@@ -31,12 +31,12 @@ public class Fish extends Actor
     {
         for(int i = 0; i < idleRight.length; i++)
         {
-            idleRight[i] = new GreenfootImage("images/Fish"+i+".png");
+            idleRight[i] = new GreenfootImage("images/ish"+i+".png");
         }
         
         for(int i = 0; i < idleLeft.length; i++)
         {
-            idleLeft[i] = new GreenfootImage("images/Fish"+i+".png");
+            idleLeft[i] = new GreenfootImage("images/ish"+i+".png");
             idleRight[i].mirrorHorizontally();
         }
         
